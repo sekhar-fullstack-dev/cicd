@@ -1,0 +1,154 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+  background: radial-gradient(circle at top, #e0f2fe, #f8fafc 55%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  padding: 2rem 1rem;
+}
+
+.app-shell {
+  max-width: 920px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px -30px #1e293b;
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .grid.two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.panel {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+input, select, button {
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #94a3b8;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: #0f766e;
+  color: #fff;
+  border-color: #0f766e;
+}
+
+button.secondary {
+  background: #334155;
+  border-color: #334155;
+}
+
+button.ghost {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+.inline {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.msg {
+  border-radius: 8px;
+  padding: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.msg.error {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #7f1d1d;
+}
+
+.msg.success {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+.msg.info {
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  color: #0c4a6e;
+}
+
+.tx-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.tx-item {
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  padding: 0.8rem;
+  background: #fff;
+}
+
+.badge {
+  font-size: 0.75rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid transparent;
+}
+
+.badge.pending {
+  color: #78350f;
+  background: #fef9c3;
+  border-color: #fde68a;
+}
+
+.badge.success {
+  color: #14532d;
+  background: #dcfce7;
+  border-color: #86efac;
+}
+
+.badge.failed {
+  color: #7f1d1d;
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
