@@ -7,6 +7,7 @@ describe('App integration flows', () => {
   it('logs in, creates pending transfer, verifies success', async () => {
     render(<App />);
 
+    
     await userEvent.click(screen.getByTestId('login-submit'));
 
     expect(await screen.findByTestId('dashboard')).toBeInTheDocument();
