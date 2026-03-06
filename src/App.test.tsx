@@ -9,7 +9,6 @@ describe('App integration flows', () => {
 
     await userEvent.click(screen.getByTestId('login-submit'));
 
-    
     expect(await screen.findByTestId('dashboard')).toBeInTheDocument();
 
     const amountInput = screen.getByTestId('amount');
